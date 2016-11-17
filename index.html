@@ -65,6 +65,9 @@
 
 @media only screen and (max-device-width: 480px) {
 /* define mobile specific styles come here */
+#demo{
+	overflow: visible;
+}
 #social_img{
 	width: 50%;
     margin-left: 26%;
@@ -73,7 +76,7 @@
 	#orange_line{
 		height: 75px;
 background: #F26238;
-width: 150%;
+width: 121%;
 margin-left: -21%;
 margin-top: 6%;
 	}
@@ -89,6 +92,9 @@ margin-left: -2%;
 		margin-left: 18%;
 margin-top: 10%;
 	}
+}
+.demo{
+	background:#F37436;overflow: hidden;
 }
 .aladin{
 	margin-left: -16%;
@@ -115,7 +121,7 @@ margin-left: 22%;
 }
 	</style>
 </head>
-<body class="demo" style="background:#F37436;overflow: hidden;">
+<body class="demo" id="demo" style="">
 
 	<!-- Demo content -->
 
@@ -162,7 +168,7 @@ margin-left: 22%;
 
 
 
-	      <div class="row col-sm-12 col-md-12" >
+	      <div class="row col-sm-12 col-md-12" style="position:relative;" >
 					<div class="orange_line" id="orange_line" style=""></div>
 					<img src="img/social_media.png" id="social_img" class="social_img" alt="" style="" />
 				</div>
