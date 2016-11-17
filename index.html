@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>ShopCop</title>
 	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 
@@ -61,12 +62,63 @@
     font-family: myFirstFont;
     src: url('fonts/ten.ttf');
 }
+
+@media only screen and (max-device-width: 480px) {
+/* define mobile specific styles come here */
+#social_img{
+	width: 50%;
+    margin-left: 26%;
+    margin-top: -45%;
+  }
+	#orange_line{
+		height: 75px;
+background: #F26238;
+width: 150%;
+margin-left: -21%;
+margin-top: 6%;
+	}
+	#desc_sc{
+		margin-top: 0%;
+margin-left: 0%;
+	}
+	#desc_sc1{
+		margin-top: 0%;
+margin-left: -2%;
+	}
+	#aladin{
+		margin-left: 18%;
+margin-top: 10%;
+	}
+}
+.aladin{
+	margin-left: -16%;
+margin-top: 2%;
+}
+
+.social_img{
+	width: 21%;
+    margin-left: 54%;
+    margin-top: -18%;
+}
+
+.desc_sc{
+	margin-top: -60%;
+	 margin-left: 30%;
+}
+
+.desc_sc1{
+	margin-top: -26%;
+margin-left: 22%;
+}
+.orange_line{
+	height: 75px;background:#F26238;width:150%;margin-left:-21%;margin-top:-7%;
+}
 	</style>
 </head>
-<body class="demo" style="background:#F37436;overflow:hidden;">
+<body class="demo" style="background:#F37436;overflow: hidden;">
 
 	<!-- Demo content -->
-	<div id="demo-content">
+
 
 		<!-- <div class="col-md-16 col-lg-4 col-xl-8 col-xs-12" id="loader-wrapper">
 			<div id="loader"></div>
@@ -76,50 +128,61 @@
 
 		</div> -->
 
-		<div id="content" style="overflow:">
+		<div id="content">
 
-      <div class="container">
-        <div class="row">
-          <div class="genie col-sm-12">
-            <img src="img/aladin.png" width="39%" style="margin-left:-15%;"alt="" />
+
+        <div class="row col-sm-12 col-md-10 aladin"id="aladin" style="">
+          <div class="genie">
+            <img src="img/aladin.png" width="55%" alt="" />
           </div>
         </div>
-      </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="article col-sm-9" style="margin-top:-30%; margin-left:10%;position: absolute;">
-            <img src="img/coma.png" width="10%" style="margin-top:-5%;margin-left: 30%;"/>
-            <h2 style="margin-top:-2%;font-family:roboto;font-weight:100;letter-spacing: 0.0610em;
+
+
+        <div class="row col-sm-12 col-md-8 desc_sc" id="desc_sc">
+          <div class="article" >
+            <img src="img/coma.png" width="10%" style="margin-left: 30%;"/>
+            <h2 style="font-family:roboto;font-weight:100;letter-spacing: 0.0610em;
             color:#fff;font-size:275%;text-align:center;">
              &nbsp; OH Hi !<br>
-    I think you have searched us on Google
-    That’s why you are hangging around here.<br>Keep Patience.
+    You came all the way from internet to know about us! Well Thanks but you have to <br>Keep Patience 😉.
             </h2>
     			</div>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="artcle1 col-sm-8" style="position: absolute;margin-top:-10%;margin-left: 13%;">
+
+
+      <div class="row col-sm-12 col-md-10 desc_sc1" id="desc_sc1" style="" >
+        <div class="artcle1" style="">
           <h2 style="font-family:roboto;
         font-weight:100;color:#fff;font-size:175%;text-align:center;">We will soon launch our magic show in your city.</h2>
         </div>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12" style="height: 75px;background:#F26238;margin-top: -7%;margin-left: -17%;width: 150%;position: inherit;">
-          <img src="img/social_media.png" alt="" style=" width: 14%; margin-left: 53%; margin-top: 4px;" />
+
+
+
+	      <div class="row col-sm-12 col-md-12" >
+					<div class="orange_line" id="orange_line" style=""></div>
+					<img src="img/social_media.png" id="social_img" class="social_img" alt="" style="" />
+				</div>
+
+
+
+
+    <!-- <div class="container">
+      <div class="row col-sm-12 col-md-5" >
+        <div class"col-md-12" style="height: 75px;background:#F26238;margin-top: -6%;
+				margin-left: -45%;width: 100%;">
+          <img src="img/social_media.png" id="social_img" alt="" style=" width: 30%; margin-left: 40%; margin-top: 4px;
+										" />
         </div>
       </div>
-    </div>
+    </div> -->
 
 	</div>
 
-</div>
+
 	<!-- /Demo content -->
 <!--
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
